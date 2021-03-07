@@ -1,0 +1,21 @@
+{
+    "network": "Nature",
+    "nonlin_name":"relu",
+    "k": 7,
+    "epoch": 10,
+    "sigma0" : 0.2,
+    "run_name": "debug",
+    "env_type": "function",
+    "game" : "Atlantis",
+    "func_id" : 0,
+    "func_dim" : 1000,
+    "r" : 0.8,
+    "steps_max" : 25000000,
+    "learning_rate" : 1,
+    "checkpoint_interval" : 200,
+    "seed" : 0,
+    "n_train" : 10000,
+    "n_test" : 10000,
+    "version" : 4,
+    "groups" : [2,3,4]
+}

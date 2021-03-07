@@ -1,0 +1,46 @@
+{
+    "network": "Nature",
+    "nonlin_name": "relu",
+    "sigma_reup":1,
+    "game": "Altlantis",
+    "env_type": "function",
+    "func_id": 1,
+    "func_dim": 100,
+    "run_name": "debug",
+<<<<<<< HEAD
+    "epoch": 5,  
+=======
+    "epoch": 10,  
+>>>>>>> 3f1f18e2eb8acab8c427897252c0589aeab277c1
+    "r": 0.2, 
+    "k": 10,
+    "sigma0": 0.01,
+    "lambda0": 1.0,
+    "steps_max": 25000000,
+<<<<<<< HEAD
+    "D": 1000, 
+    "d": 100,
+    "m": 100,  
+    "len_phase": 10,
+    "mu": 1, 
+    "lam" : 8, 
+    "alpha0": 1,
+    "slice_len" : 100,
+    "seed" : 0
+=======
+    "D": 100, 
+    "d": 10,
+    "m": 100,  
+    "len_phase": 20,
+    "mu": 2, 
+    "lam" : 8, 
+    "alpha0": 1,
+    "slice_len" : 10,
+    "seed" : 0,
+    "human_start" : 0,
+    "frame_max" : 1000,
+    "seed_pool" : 0,
+    "n_train" : 10000,
+    "n_test" : 10000
+>>>>>>> 3f1f18e2eb8acab8c427897252c0589aeab277c1
+}

@@ -1,0 +1,45 @@
+{
+    "network": "Nature",
+    "nonlin_name": "relu",
+    "sigma_reup":1,
+    "game": "Altlantis",
+    "env_type": "atari",
+    "func_id": 1,
+    "func_dim": 100,
+    "run_name": "debug",
+    "epoch": 5,  
+<<<<<<< HEAD
+    "r": 0.2, 
+    "k": 10,
+    "sigma0": 0.01,
+=======
+    "r": 0.95, 
+    "k": 3,
+    "sigma0": 0.005,
+>>>>>>> 3f1f18e2eb8acab8c427897252c0589aeab277c1
+    "lambda0": 1.0,
+    "steps_max": 25000000,
+    "D": 1000, 
+    "d": 100,
+    "m": 100,  
+<<<<<<< HEAD
+    "len_phase": 10,
+    "mu": 1, 
+    "lam" : 8, 
+    "alpha0": 1,
+    "slice_len" : 100,
+    "seed" : 0
+=======
+    "len_phase": 30,
+    "mu": 2, 
+    "lam" : 7, 
+    "alpha0": 1,
+    "slice_len" : 10000,
+    "seed" : 0,
+    "human_start" : 0,
+    "frame_max" : 1000,
+    "seed_pool" : 0,
+    "n_train" : 10000,
+    "n_test" : 10000
+>>>>>>> 3f1f18e2eb8acab8c427897252c0589aeab277c1
+}
