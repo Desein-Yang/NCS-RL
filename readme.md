@@ -79,3 +79,21 @@ NCNES
 mpirun -np cpus python NCNES.py --[hyperparameter]
 ```
 
+##### Citation
+
+If you feel the repo is useful, please cite the paper as
+
+```
+@incollection{yang2021,
+    author = {Yang, Qi and Yang, Peng and Tang, Ke},
+	title = {Parallel Random Embedding with Negatively Correlated Search},
+	volume = {12690},
+    year = {2021},
+	doi = {10.1007/978-3-030-78811-7_33}
+	isbn = {978-3-030-78810-0 978-3-030-78811-7},
+	pages = {339--351},
+	booktitle = {Advances in Swarm Intelligence},
+	publisher = {Springer International Publishing},
+	editor = {Tan, Ying and Shi, Yuhui},
+}
+```
