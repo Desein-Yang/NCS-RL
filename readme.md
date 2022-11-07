@@ -1,59 +1,25 @@
 # README
 
+This is a library of Evolutionary Reinforcement Learning(ERL) algorithms. The library contains a series of evolutionary algorithms based on negative correlation algorithms applied to reinforcement learning strategy optimization.
+
 - [x] NCS(Negative Correlated Search) Framework
     - [x] NCS-C
     - [x] NCSCC
     - [x] NCNES
     - [x] NCSRE
 
-
-src/
-    decomposer.py   变量分组类
-    env_wrappers.py gym环境中atari游戏的预处理等等操作
-    ops.py          用于辅助定义atari游戏的策略模型
-    models.py       定义了atari游戏的策略模型
-    policy.py       atari游戏的策略模型类，封装了rollout（测试策略模型）和模型
-
-    testfunc.py    CEC测试环境
-    logger.py      工具文件，定义了日志类
-
-其余文件：
-
-data/                      
-test/                     
-scripts/                   
-
-
-## 运行
-
-### 环境要求
-
-要求支持mpirun
-
-python推荐环境(没有版本号表示不要求固定版本号)：
-
-    tensorflow: 1.15
-    gym: 0.9.1
-    click 
-    numpy
-    opencv-python
-
 ### Usage
 
-##### NCS
-
-```
-mpirun -n 9 python NCS.py [-e][-g][-c][-r]
--n 使用的cpu数
--e 每个cpu上运行的个体数
--g atari游戏名
--r log记录名
--c 配置文件路径，默认为./configurations/sample_configuration.json]
-```
+Dependency
+- mpi4py (need mpirun environment)
+- tensorflow=1.15
+- gym=0.9.1
+- click 
+- numpy
+- opencv-python
 
 
-
-##### NCSCC
+NCSCC
 
 ```
 mpirun -np cpus python main.py [-v][-r][-e][-g][-f][-d][--epoch][--sigma0][--rvalue]
@@ -79,9 +45,35 @@ NCNES
 mpirun -np cpus python NCNES.py --[hyperparameter]
 ```
 
+NCS-C
+
+```
+mpirun -n cpus python NCS.py [-e][-g][-c][-r]
+-n the num of cpus  
+-e the num of individuals on 1 cpu
+-g the name of benchmark (gamename in atari benchmark)
+-r the name of log file
+-c the configuration files default =./configurations/sample_configuration.json
+```
+
+### Files Tree
+src/
+    decomposer.py   utils for decision varibles decomposition utils 
+    env_wrappers.py utils for env preprocess in gym                 
+    ops.py          utils for RL policy building 
+    models.py       Definition of Neural Network Models of policy
+    policy.py       Definition of RL policy (with rollout) 
+    testfunc.py     utils for CEC benchmarks (test EA algorithms)
+    logger.py       utils for logging
+data/                      
+test/                     
+scripts/   
+examples/
+
+
 ##### Citation
 
-If you feel the repo is useful, please cite the paper as
+If the repo is useful for you, please cite the paper as
 
 ```
 @incollection{yang2021,
