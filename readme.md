@@ -8,6 +8,18 @@ This is a library of Evolutionary Reinforcement Learning(ERL) algorithms. The li
     - [x] NCNES
     - [x] NCSRE
 
+We implement and encapsulate the reusable code and abstract modules for evolutionary optimization algorithms, neural network parameter optimization, reinforcement learning. You can refer to the `examples` dir to modify/implement a parallel EA or RL quickly.
+
+Features:
+- large-scale parallel communication (backend: openMPI)
+- evolution strategy framework
+- parallel RL rollout (gym)
+
+Features for special algorithm:
+- negative correlation search utils
+- decision variables decomposition
+- decision variables random embedding
+
 ### Usage
 
 Dependency
@@ -17,6 +29,7 @@ Dependency
 - click 
 - numpy
 - opencv-python
+
 
 
 NCSCC
@@ -58,13 +71,15 @@ mpirun -n cpus python NCS.py [-e][-g][-c][-r]
 
 ### Files Tree
 src/
-    decomposer.py   utils for decision varibles decomposition utils 
-    env_wrappers.py utils for env preprocess in gym                 
-    ops.py          utils for RL policy building 
+    base.py         main class of EA algorithm for NN parameters optimization
     models.py       Definition of Neural Network Models of policy
     policy.py       Definition of RL policy (with rollout) 
+    decomposer.py   utils for decision varibles decomposition (CC) 
+    env_wrappers.py utils for env preprocess in gym                 
+    ops.py          utils for RL policy building 
     testfunc.py     utils for CEC benchmarks (test EA algorithms)
     logger.py       utils for logging
+    replay.py       utils for replay buffer
 data/                      
 test/                     
 scripts/   
